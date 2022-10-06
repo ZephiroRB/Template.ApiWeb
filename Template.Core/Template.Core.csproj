@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+
+        <Using Include="System.ComponentModel.DataAnnotations" />
+        <Using Include="System.ComponentModel.DataAnnotations.Schema" />
+        <Using Include="System.ComponentModel" />
+
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="Entities" />
+      <Folder Include="Enumerations" />
+      <Folder Include="Interfaces" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="6.0.0" />
+    </ItemGroup>
+</Project>
